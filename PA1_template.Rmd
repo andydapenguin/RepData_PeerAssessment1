@@ -3,8 +3,11 @@ title: "Reproducible Research Assignment 1"
 author: "Brian Moore"
 date: "10 January 2016"
 output:
-   html_document:
-      keep_md: true
+  html_document:
+    fig_height: 4
+    fig_width: 6
+    keep_md: yes
+    self_contained: no
 ---
 
 ### Loading & preprocessing the data
