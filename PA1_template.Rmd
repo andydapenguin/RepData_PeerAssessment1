@@ -2,7 +2,8 @@
 title: "Reproducible Research Assignment 1"
 author: "Brian Moore"
 date: "10 January 2016"
-   output: html_document:
+output:
+   html_document:
       keep_md: true
 ---
 
@@ -162,7 +163,7 @@ weekday_data <- cleaned_data %>%
 Then, finally, we plot the average steps at each interval across all days for the given weekday or weekend day group and plot the two using the xyplot type='l' of the Lattice package:
 
 ```{r,echo=TRUE}
-library('Lattice')
+library('lattice')
 wd <- xyplot(average_steps ~ interval | day_of_week, data=weekday_data,
              layout=c(1,2),  type="l")
 print(wd)
